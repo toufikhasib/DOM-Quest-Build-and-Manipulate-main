@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google font link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!-- daisyui link -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- tailwind config link -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "rgb(17, 17, 17)",
+							secondary: "rgba(17, 17, 17, 0.7)",
+							bg: "rgb(249, 247, 243)",
+							"btn-bg": "rgb(180, 244, 97)",
+						},
+					},
+					fontFamily: {
+						lexend: ["Lexend", "sans-serif"],
+					},
+				},
+			};
+		</script>
+		<!-- title -->
+		<title>Quest-Build-and-Manipulate-main</title>
+	</head>
+	<body class="font-lexend">
+		<header class="bg-bg">
+			<div class="w-11/12 mx-auto">
+				<!-- start navbar -->
+				<nav class="navbar pt-6 pb-16">
+					<div class="navbar-start">
+						<button
+							class="py-3 px-8 text-xl font-semibold text-primary bg-btn-bg rounded-lg">
+							Blog
+						</button>
+					</div>
+					<div class="navbar-center space-x-4">
+						<div>
+							<img src="./image/logo.png" alt="donate logo" />
+						</div>
+						<div class="">
+							<h2 class="text-xl font-semibold text-primary">
+								Donate Bangladesh
+							</h2>
+						</div>
+					</div>
+					<div class="navbar-end space-x-2">
+						<img src="./image/coin.png" alt="donate coin" />
+						<p class="text-[#111111B3] text-xl font-medium">5500</p>
+						<p class="text-[#111111B3] text-xl font-medium">BDT</p>
+					</div>
+				</nav>
+				<!--  -->
+			</div>
+		</header>
+	</body>
+</html>

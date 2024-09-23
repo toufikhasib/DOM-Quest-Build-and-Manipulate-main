@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google font link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+			rel="stylesheet" />
+		<!-- font awesome icon cdn -->
+		<head>
+			<link
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		</head>
+
+		<!-- daisyui link -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- tailwind config link -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "rgb(17, 17, 17)",
+							secondary: "rgba(17, 17, 17, 0.7)",
+							bg: "rgb(249, 247, 243)",
+							"btn-bg": "rgb(180, 244, 97)",
+						},
+					},
+					fontFamily: {
+						lexend: ["Lexend", "sans-serif"],
+					},
+				},
+			};
+		</script>
+		<!-- title -->
+		<title>Bloge Page</title>
+	</head>
+	<body class="font-lexend">
+		<header>
+			<div class="bg-bg">
+				<nav class="navbar pt-6 pb-16 w-full md:w-11/12 mx-auto">
+					<div class="navbar-start">
+						<button
+							class="py-2 md:py-3 px-5 md:px-8 text-lg md:text-xl font-semibold text-primary bg-btn-bg rounded-lg">
+							Home
+						</button>
+					</div>
+					<div class="navbar-center space-x-4">
+						<div>
+							<img src="./image/logo.png" alt="donate logo" />
+						</div>
+						<div class="hidden md:block">
+							<h2 class="text-xl font-semibold text-primary">
+								Donate Bangladesh
+							</h2>
+						</div>
+					</div>
+					<div class="navbar-end space-x-2">
+						<img src="./image/coin.png" alt="donate coin" />
+						<p
+							class="text-[#111111B3] text-lg md:text-xl font-normal mdfont-medium">
+							5500
+						</p>
+						<p
+							class="text-[#111111B3] text-lg md:text-xl font-normal mdfont-medium">
+							BDT
+						</p>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="w-full md:w-11/12 mx-auto pt-10">
+				<div class="relative">
+					<div class="">
+						<h1 class="text-4xl text- primary font-bold">
+							ImportantFAQ
+							<span><i class="fa-regular fa-comment text-5xl"></i></span>
+						</h1>
+					</div>
+					<p class="absolute left-[295px] top-[5px] text-3xl">?</p>
+				</div>
+				<div
+					class="collapse collapse-arrow border-t border-l border-r border-gray-300">
+					<input type="radio" name="my-accordion-2" checked="checked " />
+					<div class="collapse-title text-xl font-medium">
+						What is the Document Object Model (DOM)?
+					</div>
+					<div class="collapse-content">
+						<p>
+							The document object represents your web page. If you want to
+							access any element in an HTML page, you always start with
+							accessing the document object. Below are some examples of how you
+							can use the document object to access and manipulate HTML.
+						</p>
+					</div>
+				</div>
+				<div
+					class="collapse collapse-arrow border-t border-l border-r border-gray-300">
+					<input type="radio" name="my-accordion-2" />
+					<div class="collapse-title text-xl font-medium">
+						How do you secelet on elements from DOM ?
+					</div>
+					<div class="collapse-content">
+						<ul>
+							<li>getElementById: Selects an element by its id.</li>
+							<li>
+								getElementsByClassName: Selects elements by class. Returns an
+								HTMLCollection.
+							</li>
+							<li>
+								getElementsByTagName: Selects elements by tag. Returns an
+								HTMLCollection.
+							</li>
+							<li>
+								querySelector: Selects the first element that matches a CSS
+								selector.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="collapse collapse-arrow border-t border-l border-r border-gray-300">
+					<input type="radio" name="my-accordion-2 " />
+					<div class="collapse-title text-xl font-medium">
+						What is event delegation in the context of the DOM, and why it is
+						useful ?
+					</div>
+					<div class="collapse-content">
+						<p>
+							Event delegation is a technique where a single event listener on a
+							parent element handles events from its child elements, even if
+							they are added dynamically. It improves efficiency by reducing the
+							number of listeners and simplifies code maintenance.
+						</p>
+					</div>
+				</div>
+				<div
+					class="collapse collapse-arrow border-t border-b border-l border-r border-gray-300">
+					<input type="radio" name="my-accordion-2" checked="checked " />
+					<div class="collapse-title text-xl font-medium">
+						Hoe do you manipulate an element's attributes and styles using the
+						DOM ?
+					</div>
+					<div class="collapse-content">
+						<p>
+							You can manipulate an element's attributes using getAttribute,
+							setAttribute, and removeAttribute. For styles, use
+							element.style.property to get or set specific styles directly.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

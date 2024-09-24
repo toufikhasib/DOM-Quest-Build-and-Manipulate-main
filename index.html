@@ -40,10 +40,13 @@
 		<header class="sticky top-0 z-50 backdrop-blur-xl">
 			<!-- start navbar -->
 			<div class="bg-bg">
-				<nav
-					class="navbar pt-6 pb-16 w-full md:w-11/12 mx-auto ">
+				<nav class="navbar pt-6 pb-16 w-full md:w-11/12 mx-auto">
 					<div class="navbar-start">
-						<a class="py-2 md:py-3 px-5 md:px-8 text-lg md:text-xl font-semibold text-primary bg-btn-bg rounded-lg" href="blog.html">Blog</a>
+						<a
+							class="py-2 md:py-3 px-5 md:px-8 text-lg md:text-xl font-semibold text-primary bg-btn-bg rounded-lg"
+							href="blog.html"
+							>Blog</a
+						>
 					</div>
 					<div class="navbar-center space-x-4">
 						<div>
@@ -57,32 +60,48 @@
 					</div>
 					<div class="navbar-end space-x-2">
 						<img src="./image/coin.png" alt="donate coin" />
-						<p class="text-[#111111B3] text-lg md:text-xl font-normal mdfont-medium">5500</p>
-						<p class="text-[#111111B3] text-lg md:text-xl font-normal mdfont-medium">BDT</p>
+						<p
+							id="total-donate-amount"
+							class="text-[#111111B3] text-lg md:text-xl font-normal mdfont-medium">
+							5500
+						</p>
+						<p
+							class="text-[#111111B3] text-lg md:text-xl font-normal mdfont-medium">
+							BDT
+						</p>
 					</div>
 				</nav>
 			</div>
 			<!--  -->
-			<div class=" flex justify-center mt-10 md:mt-20 mb-4 md:mb-8 space-x-4">
+			<div
+				class="flex justify-center mt-10 md:mt-20 mb-4 md:mb-8 space-x-4 relative">
 				<button
+					id="donate-btn"
 					class="btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-btn-bg rounded-lg">
 					Donation
 				</button>
-				<button
-					class="btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-lg border-2">
-					History
-				</button>
+
+				<div id="history-btn">
+					<button
+						class="btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-lg border-2">
+						History
+					</button>
+					<div
+						id="history-section"
+						class="absolute left-0 right-0 top-20 w-8/12 mx-auto"></div>
+				</div>
 			</div>
 			<!--  -->
-			<div class="divider"></div>
+			<!-- <div class="divider"></div> -->
 		</header>
-		<main ">
+		<main id="donate-section">
 			<!-- start noakhali section -->
-			<section class="lg:w-11/12 mx-auto mb-7 lg:mb-0 lg:p-8 rounded-xl ">
-				<div class="grid lg:grid-cols-12 gap-10 border-2 p-4 lg:p-8 rounded-2xl ">
+			<section class="lg:w-11/12 mx-auto mb-7 lg:mb-0 lg:p-8 rounded-xl">
+				<div
+					class="grid lg:grid-cols-12 gap-10 border-2 p-4 lg:p-8 rounded-2xl">
 					<div class="col-span-7 lg:col-span-5">
 						<img
-							class=" w-full mx-auto lg:h-[400px]"
+							class="w-full mx-auto lg:h-[400px]"
 							src="./image/noakhali.png"
 							alt="plase noakhali" />
 					</div>
@@ -91,12 +110,15 @@
 							<div
 								class="py-3 px-4 bg-[#1111110D] flex items-center rounded-lg">
 								<img src="./image/coin.png" alt="donate coin" />
-								<p class="text-xl font-medium">7000</p>
+								<p id="noakhali-donate-amount" class="text-xl font-medium">
+									7000
+								</p>
 								<p class="text-xl font-medium">BDT</p>
 							</div>
 						</div>
 						<div>
-							<h2 class="text-lg md:text-xl text-primary font-semibold lg:font-bold mb-5">
+							<h2
+								class="text-lg md:text-xl text-primary font-semibold lg:font-bold mb-5">
 								Donate for Flood at Noakhali, Bangladesh
 							</h2>
 							<p class="text-secondary text-sm lg:text-lg font-normal">
@@ -110,12 +132,14 @@
 						</div>
 						<div>
 							<input
+								id="noakhali-input-field"
 								type="text"
 								placeholder="Write Donation Amount"
 								class="w-full p-5 rounded-lg border" />
 						</div>
 						<div>
 							<button
+								id="donate-noakhali-btn"
 								class="bg-btn-bg w-full py-4 rounded-lg text-primary font-semibold">
 								Donate Now
 							</button>
@@ -124,11 +148,12 @@
 				</div>
 			</section>
 			<!-- stsrt feni section -->
-			<section class="lg:w-11/12 mx-auto lg:p-8 rounded-xl  mb-7 lg:mb-0 ">
-				<div class="grid lg:grid-cols-12 gap-10 border-2 p-4 lg:p-8 rounded-2xl ">
+			<section class="lg:w-11/12 mx-auto lg:p-8 rounded-xl mb-7 lg:mb-0">
+				<div
+					class="grid lg:grid-cols-12 gap-10 border-2 p-4 lg:p-8 rounded-2xl">
 					<div class="col-span-7 lg:col-span-5">
 						<img
-							class=" w-full mx-auto lg:h-[400px]"
+							class="w-full mx-auto lg:h-[400px]"
 							src="./image/feni.png"
 							alt="plase noakhali" />
 					</div>
@@ -142,11 +167,19 @@
 							</div>
 						</div>
 						<div>
-							<h2 class="text-lg md:text-xl text-primary font-semibold lg:font-bold mb-5">
+							<h2
+								class="text-lg md:text-xl text-primary font-semibold lg:font-bold mb-5">
 								Donate for Flood Relief in Feni,Bangladesh
 							</h2>
 							<p class="text-secondary text-sm lg:text-lg font-normal">
-								The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+								The recent floods in Feni have devastated local communities,
+								leading to severe disruption and loss. Your generous donation
+								will help provide immediate aid, including food, clean water,
+								and medical supplies, to those affected by this calamity.
+								Together, we can offer crucial support and help rebuild lives in
+								the aftermath of this disaster. Every contribution counts
+								towards making a real difference. Please consider donating today
+								to assist those in urgent need.
 							</p>
 						</div>
 						<div>
@@ -165,11 +198,12 @@
 				</div>
 			</section>
 			<!-- start injured section -->
-			<section class="lg:w-11/12 mx-auto lg:p-8 rounded-xl ">
-				<div class="grid lg:grid-cols-12 gap-10 border-2 p-4 lg:p-8 rounded-2xl ">
+			<section class="lg:w-11/12 mx-auto lg:p-8 rounded-xl">
+				<div
+					class="grid lg:grid-cols-12 gap-10 border-2 p-4 lg:p-8 rounded-2xl">
 					<div class="col-span-7 lg:col-span-5">
 						<img
-							class=" w-full mx-auto lg:h-[400px]"
+							class="w-full mx-auto lg:h-[400px]"
 							src="./image/quota-protest.png"
 							alt="plase noakhali" />
 					</div>
@@ -183,11 +217,20 @@
 							</div>
 						</div>
 						<div>
-							<h2 class="text-lg md:text-xl text-primary font-semibold lg:font-bold mb-5">
+							<h2
+								class="text-lg md:text-xl text-primary font-semibold lg:font-bold mb-5">
 								Aid for Injured in the Quota Movement
 							</h2>
 							<p class="text-secondary text-sm lg:text-lg font-normal">
-								The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+								The recent Quota movement has resulted in numerous injuries and
+								significant hardship for many individuals. Your support is
+								crucial in providing medical assistance, rehabilitation, and
+								necessary supplies to those affected. By contributing, you help
+								ensure that injured individuals receive the care and support
+								they need during this challenging time. Every donation plays a
+								vital role in alleviating their suffering and aiding in their
+								recovery. Please consider making a donation to support these
+								brave individuals in their time of need.
 							</p>
 						</div>
 						<div>
@@ -205,12 +248,32 @@
 					</div>
 				</div>
 			</section>
+			<!--  -->
+			<section class="bg-bg h-24 mt-16"></section>
 		</main>
 		<!-- footer section -->
-		<footer class="bg-bg h-24 mt-16">
-		</footer>
+		<!-- Donation confirmation modal -->
+		<div
+			id="donation-modal"
+			class="hidden fixed inset-0 bg-gray-500 bg-opacity-75 items-center justify-center z-50">
+			<div class="bg-white rounded-lg shadow-lg p-6 max-w-sm text-center">
+				<h2 class="text-2xl font-bold mb-4">Congrates!</h2>
+				<img src="./image/coin.png" alt="Coin Icon" class="mx-auto mb-4 w-12" />
+				<p id="donation-message" class="text-lg mb-4">
+					You Have Donated for Humankind
+				</p>
+				<h2 class="text-3xl font-semibold">Successfully</h2>
+				<button
+					id="close-modal-btn"
+					class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg">
+					close confirmation
+				</button>
+			</div>
+		</div>
+
+		<!-- <footer id="footer-section" class="bg-bg h-24 mt-16"></footer> -->
 		<!-- javascript link -->
-		 <script src="./ulities.js"></script>
-		 <script src="./index.js"></script>
+		<script src="./ulities.js"></script>
+		<script src="./index.js"></script>
 	</body>
 </html>

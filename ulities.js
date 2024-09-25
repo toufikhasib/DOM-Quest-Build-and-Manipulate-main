@@ -12,28 +12,14 @@ function getDonateTextField(id) {
 // Show the modal with the donation amount
 function showDonationModal() {
 	const modal = document.getElementById("donation-modal");
-	// No message change here, just show the modal
 	modal.classList.remove("hidden");
-
-	// Close the modal on button click
 	document
 		.getElementById("close-modal-btn")
 		.addEventListener("click", function () {
 			modal.classList.add("hidden");
 		});
 }
-
-// Section showing functionality remains the same
-document.getElementById("donate-btn").addEventListener("click", function () {
-	showSectionBy("donate-section");
-});
-
-document
-	.getElementById("history-btn")
-	.querySelector("button")
-	.addEventListener("click", function () {
-		showSectionBy("history-section");
-	});
+// show the else custom alert
 
 // show button click function
 function showSectionBy(id) {
@@ -41,4 +27,19 @@ function showSectionBy(id) {
 	document.getElementById("history-section").classList.add("hidden");
 	document.getElementById(id).classList.remove("hidden");
 }
-//
+//show time function
+function formatDateTime(date) {
+	const options = {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+		hour: "2-digit",
+		minute: "2-digit",
+		second: "2-digit",
+		timeZone: "Asia/Dhaka",
+		timeZoneName: "short",
+	};
+
+	return date.toLocaleString("en-US", options);
+}
